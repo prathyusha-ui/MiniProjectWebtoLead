@@ -10,7 +10,7 @@ function beforeSubmit(event){
         outputDate.value = formattedDate;
         console.log(outputDate.value);
     }else{
-        alert('Please select reCAPTCHA checkbox to submit the Lead..');
+        alert("Please select reCAPTCHA checkbox to submit the Lead..");
         event.preventDefault();
     }
 
