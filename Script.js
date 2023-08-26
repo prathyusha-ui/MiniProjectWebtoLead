@@ -4,8 +4,8 @@ function beforeSubmit(event){
         let outputDate = document.querySelector('.outputdate');
         let inputDate = document.querySelector('.inputdate');
         
-        console.log('input date::' , inputDate.value);//string to Date(en_US) form
-        let formattedDate = new Date(inputDate.value).toLocaleDateString("en-US");
+        console.log('input date::' , inputDate.value);//string to Date(en_IN) form
+        let formattedDate = new Date(inputDate.value).toLocaleDateString("en-IN");
         console.log(typeof formattedDate,formattedDate);
         outputDate.value = formattedDate;
         console.log(typeof outputDate.value, outputDate.value);
