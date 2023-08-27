@@ -3,8 +3,7 @@ function beforeSubmit(event) {
   if (captchaChecked) {
     let outputDate = document.querySelector(".outputdate");
     let inputDate = document.querySelector(".inputdate");
-
-    console.log("input date::", inputDate.value); //string to Date(en_IN) form
+    console.log("input date::", inputDate.value);
     let formattedDate = new Date(inputDate.value).toLocaleDateString("en-IN");
     console.log(typeof formattedDate, formattedDate);
     outputDate.value = formattedDate;
@@ -27,7 +26,6 @@ function timestamp() {
   }
 }
 setInterval(timestamp, 500);
-
 function capthchaSuccess() {
   captchaChecked = true;
 }
