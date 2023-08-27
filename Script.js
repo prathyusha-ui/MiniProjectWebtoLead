@@ -27,5 +27,6 @@ function timestamp() {
 }
 setInterval(timestamp, 500);
 function capthchaSuccess() {
+  debugger;
   captchaChecked = true;
 }
